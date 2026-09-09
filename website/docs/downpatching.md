@@ -72,6 +72,23 @@ description: Information on downpatching Hitman 3
     - The `--skip-version-check` argument is needed on a downpatched game, or it won't launch.
     - NOTE: You can ONLY use legendary to launch the downpatched version on Epic. The official Epic Games Launcher won't let you launch the game when downpatched!
 
+
+## Example of using a multi-patch setup with Heroic for Epic Games versions of the game
+
+
+  - This assumes you already have your desired version(s) of the game downloaded. This tutorial will use the latest retail build at the time of writing (v3.280.0) and the retail molotov accidents build (v3.120) as a baseline, but should be adaptable for any retail + downpatch build setup, including more than two downpatched builds.
+  - This tutorial will be written specifically for linux, but most of this will also apply on windows.
+  - Once installed in heroic, go to your library, right click on Hitman 3 and click on settings.
+  - Next, go to the Advanced Tab, and find "Select an alternative EXE to run".
+  - Click the folder icon to open your file explorer of choice.
+  - Next, go to your folder storing the **DOWNPATCHED BUILD** of choice.
+  - Go into the retail folder, and find **HITMAN3.EXE**, and choose that as the alternative exe to run. If you wish to swap from one downpatched version to another, just change the alternative EXE accordingly.
+    - Note: The downpatched version **SHOULD** follow the game settings for your live install of the game, but this has not been confirmed to be 100% true. If you need the launcher for some reason, remove the alternative exe from the advanced settings, and then launch the game normally through Heroic.
+  - Start the game, through heroic, and it will launch you into the downpatched build of your choice.
+  - Use the PeacockPatcher, or OnlineTools accordingly to connect to your Peacock instance. While this downpatched build will connect to the official servers as of writing this guide (9/9/26), the menus will look buggy.
+    - (LINUX ONLY) If you need to run PeacockPatcher for an older build of the game, Launch the game first. Then go back to Heroic, and access game settings again by right clicking on Hitman 3. Then go to the WINE tab, and click on "Run EXE on Prefix". Run the PeacockPatcher.exe appropriate for your version of the game. When closing the game, if you close the game before the patcher, the patcher might hang, and you will have to terminate it.
+    - If you wish to revert your heroic install to use the latest patch, you can just clear the alternative EXE to run option, and it will launch your retail game instead.
+
 ### Steam
 
 **Setup**
